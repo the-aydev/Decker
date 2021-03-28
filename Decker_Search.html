@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decker</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css" />
+    <link rel="stylesheet" href="Decker.css" />
+  </head>
+
+  <body>
+    <nav class="header">
+      <div class="top">
+        <ul class="DeckerSearch">
+          <li>
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-user-circle" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li><a href="Decker_Advanced_Search.html">Advanced Search</a></li>
+          <li><a href="Decker_Image_Search.html">Images</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- The search -->
+
+    <div class="google-logo">
+      <img
+        src="Images/GoogleLogo.png"
+        height="95px"
+        width="275px"
+        alt="google-logo"
+        title="google-logo"
+      />
+    </div>
+    <div class="main">
+      <form action="https://google.com/search">
+        <input
+          type="text"
+          name="q"
+          id="searchbar"
+          placeholder="Search Google or Type URL"
+        />
+        <input
+          class="GoogleSearch"
+          type="submit"
+          value="Google Search"
+          id="search_button"
+        />
+      </form>
+    </div>
+    <input
+      class="lucky"
+      type="button"
+      value="I'm Feeling Lucky"
+      id="lucky_button"
+    />
+    <br />
+
+    <!-- Languages -->
+
+    <div class="languages">
+      Decker offered in:
+      <a href="#">Hausa</a><a href="#">Igbo</a><a href="#">Ede Yoruba</a
+      ><a href="#">Nigerian Pidgin</a>
+    </div>
+
+    <!-- Footer -->
+
+    <a class="location" href="#">Nigeria</a>
+    <div class="footer">
+      <a href="#">Advertising</a><a href="#">Business</a><a href="#">About</a
+      ><a href="#">How Search Works</a>
+    </div>
+    <div class="right">
+      <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Settings</a>
+    </div>
+  </body>
+</html>

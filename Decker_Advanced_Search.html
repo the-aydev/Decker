@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decker Advanced Search</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css" />
+    <link rel="stylesheet" href="Decker.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="top">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-user-circle" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="DeckerLogoInLeft">
+            <a href="Decker_Search.html"
+              ><img
+                src="Images/GoogleLogo.png"
+                alt="Home"
+                height="40px"
+                width="100px"
+            /></a>
+          </li>
+          <li><a href="Decker_Image_Search.html">Images</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- The Search -->
+
+    <label class="label" style="margin-left: 1px; margin-top: 2px;">Advanced Search</label>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- major -->
+
+    <div class="top">
+      <form class="form1" action="https://google.com/search">
+        <span class="qwe" style="font-size: larger;">Find pages with...</span>
+        <input class="asd" type="text" name="as_q" style="opacity: 0;" />
+        <span class="rpg" style="font-weight: bold; color: #555;"
+          >To do this in the search box.</span
+        >
+        <br /><br />
+        <span class="qwe">all these words:</span
+        ><input class="asd" type="text" name="as_q" />
+        <span class="rpg"
+          >Type the important words: tri-colour rat terrier
+        </span>
+        <br /><br />
+        <span class="qwe">this exact word or phrase:</span
+        ><input class="asd" type="text" name="as_epq" />
+        <span class="rpg">Put exact words in quotes: "rat terrier" </span>
+        <br /><br />
+        <span class="qwe">any of these words:</span
+        ><input class="asd" type="text" name="as_oq" />
+        <span class="rpg"
+          >Type OR between all the words you want: miniature OR standard
+        </span>
+        <br /><br />
+        <span class="qwe">none of these words:</span
+        ><input class="asd" type="text" name="as_eq" />
+        <span class="rpg"
+          >Put a minus sign just before words that you don't want: -rodent,
+          -"Jack Russell"
+        </span>
+        <br /><br />
+        <span class="qwe">numbers ranging from:</span>
+        <input type="text" name="as_eq" style="display: inline-block; height: 25px; vertical-align: middle; margin-left: -480px; width: 200px; padding-left: 800px;"/>
+        <span>to</span>
+        <input type="text" name="as_eq" style="display: inline-block; height: 25px; vertical-align: middle; margin-left: -480px; width: 200px; padding-left: 800px;"/>
+        <span class="rpg">
+          Put two full stops between the numbers and add a unit of measurement:
+          10..35 kg, £300..£500, 2010..2011
+        </span>
+        <br /><br />
+
+      <div><span class="qwe" style="font-size: larger">Then narrow your results by...</span></div>
+    <br><br>
+        <label class="qwe" for="input">language:</label>
+        <select class="asd" name="language" id="language" style="background-color: lightgrey;" >
+          <option value="#">any language</option>
+          <option value="#">Chinese</option>
+          <option value="#">Afrikaans</option>
+          <option value="#">Dutch</option>
+          <option value="#">English</option>
+          <option value="#">French</option>
+          <option value="#">Italian</option>
+          <option value="#">Spanish</option>
+        </select>
+        <span class="rpg">Find pages in the language that you select.</span>
+      <br><br>
+        <label class="qwe" for="input">region</label>
+        <select class="asd" name="region" id="region" style="background-color: lightgrey;" >
+          <option value="#">any region</option>
+          <option value="#">Albania</option>
+          <option value="#">China</option>
+          <option value="#">Denmark</option>
+          <option value="#">England</option>
+          <option value="#">France</option>
+          <option value="#">Italy</option>
+          <option value="#">Spain</option>
+        </select>
+        <span class="rpg">Find pages published in a particular region. </span>
+      <br><br>
+        <label class="qwe" for="input">last update:</label>
+        <select class="asd" name="last update:" id="last update:" style="background-color: lightgrey;" >
+          <option value="#">anytime</option>
+          <option value="#">past 24 hours</option>
+          <option value="#">past week</option>
+          <option value="#">past month</option>
+          <option value="#">past year</option>
+        </select>
+        <span class="rpg">Find pages updated within the time that you specify.</span>
+      <br><br>
+        <label class="qwe" for="input">site or domain:</label>
+        <input class="asd" type="text" />
+        <span class="rpg"
+          >Search one site (like wikipedia.org ) or limit your results to a
+          domain like .edu, .org or .gov
+        </span>
+      <br><br>
+        <label for="input">terms appearing:</label>
+        <select class="asd" name="terms appearing:" id="terms appearing:" style="background-color: lightgrey;" >
+          <option value="#">anywhere in the page</option>
+          <option value="#">in the title of the page</option>
+          <option value="#">in the text of the page</option>
+          <option value="#">in the URL of the page</option>
+          <option value="#">in links to the page</option>
+        </select>
+        <span class="rpg"
+          >Search for terms in the whole page, page title or web address, or
+          links to the page you're looking for.
+        </span>
+      <br><br>
+        <label class="qwe" for="input" style="color: blue;">SafeSearch:</label>
+        <select class="asd" name="SafeSearch:" id="SafeSearch:" style="background-color: lightgrey;" >
+          <option value="#">show most relevant results</option>
+          <option value="#">filter explicit results</option>
+        </select>
+        <span class="rpg"
+          >Tell <span style="color: blue;">Safesearch</span> whether to filter sexually explicit content.</span
+        >
+      <br><br>
+        <label class="qwe" for="input">file type:</label>
+        <select class="asd" name="file type:" id="file type:" style="background-color: lightgrey;" >
+          <option value="#">any format</option>
+          <option value="#">Adobe Acrobat PDF (.pdf)</option>
+          <option value="#">Autodesk DWF (.dwf)</option>
+          <option value="#">Microsoft Word (.doc)</option>
+          <option value="#">Shockwave Flash (.swf)</option>
+        </select>
+        <span class="rpg">Find pages in the format that you prefer. </span>
+      <br><br>
+        <label class="qwe" for="input" style="color: blue;">usage rights:</label>
+        <select class="asd" name="usage rights:" id="usage rights:" style="background-color: lightgrey;" >
+          <option value="#">all</option>
+          <option value="#">creative commons licenses</option>
+          <option value="#">commercial and other licenses</option>
+        </select>
+        <span class="rpg">Find pages that you are free to use yourself.</span>
+      <br><br>
+        <form  action="https://www.google.com/search?as_q=&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs="></form>
+        <label for="input" style="color: white">g </label>
+        <input type="submit" style="border: solid skyblue; color: white; background-color: skyblue; margin-left: 645px;" value="Advanced Search" />
+        </form>
+      </div>
+
+      </form>
+  
+
+    <!-- The minor -->
+    <br />
+    <div>
+      <form action="yoyo" style="text-align: left; padding-left: 45px;">
+        <label for="span" style="padding-bottom: 100px;">You can also... </label><br>
+        <span style="color: blue; font-size: small; font-weight: 500;">Find pages that are similar to a URL </span><br>
+        <span style="color: blue; font-size: small; font-weight: 500;">Search pages that you've visited </span><br>
+        <span style="color: blue; font-size: small; font-weight: 500;">Use operators in the search box </span><br>
+        <span style="color: blue; font-size: small; font-weight: 500;">Customise your search settings </span><br>
+      </form>
+    </div>
+
+    <!-- The Footer -->
+
+    <a class="location" href="#" style="bottom: -550px;">Nigeria</a>
+    <div class="footer" style="bottom: -600px;">
+      <a href="#">Help</a><a href="#">Privacy</a><a href="#">Terms</a>
+    </div>
+  </body>
+</html>
